@@ -1,0 +1,131 @@
+:root {
+    /* Layout */
+    --mobile-width: 375px;
+    --desktop-width: 1440px;
+
+    /* Primary Colors */
+    --green-500: hsl(158, 36%, 37%);
+    --green-700: hsl(158, 42%, 18%);
+
+    /* Neutral Colors */
+    --black: hsl(212, 21%, 14%);
+    --grey: hsl(228, 12%, 48%);
+    --cream: hsl(30, 38%, 92%);
+    --white: hsl(0, 0%, 100%);
+
+    /* Typography */
+    --font-size-paragraph: 14px;
+
+    --font-primary: "Montserrat", sans-serif;
+    --font-primary-weight-medium: 500;
+    --font-primary-weight-bold: 700;
+
+    --font-secondary: "Fraunces", serif;
+    --font-secondary-weight-bold: 700;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    font-family: var(--font-primary), 'serif';
+    font-size: clamp(1rem, 2vw, 1.6rem);
+    color: var(--grey);
+    background-color: var(--cream);
+}
+
+/* Main component */
+.main {
+    width: 50rem;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+}
+
+.main-img {
+    min-width: 50%;
+}
+
+.info {
+    padding: 3rem 3.2rem;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    font-size: 1rem;
+    background-color: var(--white);
+}
+
+.tag {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    color: var(--grey);
+}
+
+.info > h1 {
+    font-family: var(--font-secondary), 'sans-serif';
+    font-size: 2.4rem;
+    font-weight: 800;
+    line-height: 1;
+    color: var(--black);
+}
+
+.description {
+    font-size: 1.1rem;
+}
+
+.info-prices {
+    position: relative;
+}
+
+.info-prices span:first-child {
+    margin-right: 1.2rem;
+    color: var(--green-500);
+    font-family: var(--font-secondary), 'sans-serif';
+    font-weight: 800;
+    font-size: 2.4rem;
+}
+
+.info-prices span:last-child {
+    position: absolute;
+    top: 8px;
+    font-size: 1.1rem;
+    text-decoration: line-through;
+}
+
+.cart-button {
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--white);
+    background-color: var(--green-500);
+}
+
+.cart-button:hover {
+    background-color: var(--green-700);
+    cursor: pointer;
+}
+
+/* Media queries */
+@media (max-width: 51rem) {
+    .main {
+        flex-direction: column;
+        width: 35rem;
+    }
+
+    .main-img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        object-position: 0 -120px;
+    }
+}

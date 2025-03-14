@@ -12,3 +12,6 @@ Usage of:
 
 ## **Mobile preview:**
 ![Mobile version preview](https://github.com/ChrisFloresM/ProductPreview/blob/master/final/mobile.png).
+
+## URL of the online site:
+https://cfproductpreview.netlify.app/

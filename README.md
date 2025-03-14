@@ -7,8 +7,8 @@ Usage of:
 - Responsive fonts
 - Flexbox
 
-**Desktop preview:**
+## **Desktop preview:**
 ![desktop version preview](https://github.com/ChrisFloresM/ProductPreview/blob/master/final/desktop.png)
 
-**Mobile preview:**
+## **Mobile preview:**
 ![Mobile version preview](https://github.com/ChrisFloresM/ProductPreview/blob/master/final/mobile.png).

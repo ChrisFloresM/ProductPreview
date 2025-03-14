@@ -47,7 +47,6 @@ body {
     border-radius: 15px;
     overflow: hidden;
     display: flex;
-    outline: 1px solid greenyellow;
 }
 
 .main-img {

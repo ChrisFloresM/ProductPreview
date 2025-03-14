@@ -43,10 +43,11 @@ body {
 
 /* Main component */
 .main {
-    width: 50rem;
+    max-width: 50rem;
     border-radius: 15px;
     overflow: hidden;
     display: flex;
+    outline: 1px solid greenyellow;
 }
 
 .main-img {
@@ -58,7 +59,6 @@ body {
     display: flex;
     gap: 2rem;
     flex-direction: column;
-    font-size: 1rem;
     background-color: var(--white);
 }
 
@@ -104,6 +104,10 @@ body {
     padding: 1rem;
     border: none;
     border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2rem;
     font-size: 1.2rem;
     font-weight: 700;
     color: var(--white);
@@ -115,17 +119,44 @@ body {
     cursor: pointer;
 }
 
+.icon {
+    font-size: 2.4rem;
+}
+
 /* Media queries */
-@media (max-width: 51rem) {
+@media (max-width: 510px) {
+    body {
+        padding: 1.2rem;
+    }
+
     .main {
         flex-direction: column;
         width: 35rem;
     }
 
     .main-img {
-        width: 100%;
         height: 250px;
         object-fit: cover;
         object-position: 0 -120px;
+    }
+
+    .info h1 {
+        font-size: 3.2rem;
+    }
+
+    .description {
+        font-size: 1.4rem;
+    }
+
+    .info-prices span:first-child {
+        font-size: 2.6rem;
+    }
+
+    .info-prices span:last-child {
+        font-size: 1.4rem;
+    }
+
+    .cart-button {
+        font-size: 1.5rem;
     }
 }
